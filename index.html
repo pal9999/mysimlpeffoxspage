@@ -4,133 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start page</title>
-    <style>
-    html {
-    height: 100%;
-}
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-image: radial-gradient( circle 349px at 0.3% 48.6%,  rgba(0,0,0,1) 0%, rgba(87,124,253,0.89) 100.7% );
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin: 0;
-            margin: 0;
-            padding: 40px;
-            color: #333;
-            min-height: 80vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .container {
-            max-width: 700px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(30px);
-            border-radius: 20px;
-            padding:30px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        }
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-            margin: 0 0 30px;
-            color: #444;
-        }
-        .search-box {
-            margin-bottom: 20px;
-        }
-        #search-input {
-            width: 100%;
-            padding: 10px;
-            font-size: 1.2em;
-            border: 3px solid #ddd;
-            border-radius: 50px;
-            outline: none;
-            box-sizing: border-box;
-            text-align: center;
-        }
-        #search-input:focus {
-            border-color: #667eea;
-        }
-        .section {
-            margin-bottom: 10px;
-        }
-        .section h2 {
-            font-size: 1.5em;
-            margin: 0 0 15px;
-            color: #555;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 5px;
-            text-align: center;
-        }
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            text-align: center;
-        }
-        .link {
-            padding: 12px 20px;
-            background: white;
-            border-radius: 10px;
-            text-decoration: none;
-            color: #333;
-            font-size: 1.1em;
-            transition: all 0.2s;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-        .link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            color: #667eea;
-        }
-        .weather {
-    text-align: center;
-    padding: 15px;  /* Зменшено для компактності */
-    background: rgba(102, 126, 234, 0.1);
-    border-radius: 15px;
-    position: absolute;
-    top: 20px;        
-    right: 20px;   
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);  
-    min-width: 100px; 
-}
-        #weather-temp {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin: 0;
-    color: white;     
-    font-style: normal; 
-    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-}
-
-.loading {
-    color: rgba(255,255,255,0.8);
-    font-style: normal;
-}
-        
-        .sections-row {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
-}
-
-.sections-row .section {
-    flex: 1;
-    margin-bottom: 0;
-}
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="section">
-            <div class="weather">
-                <div id="weather-temp" class="loading">Чекай...</div>
-                <div id="weather-time"></div>
-            </div>
+    <div class="section">
+        <div class="weather">
+            <div id="weather-temp" class="loading">Чекай...</div>
+            <div id="weather-time"></div>
         </div>
     </div>
 
@@ -140,76 +20,48 @@
         </div>
         
         <div class="sections-row">
-    <div class="section">
-        <h2>Work</h2>
-        <div class="links">
-            <a href="https://support.ftband.net" class="link">Support</a>
-            <a href="https://operatordesk.ftband.net/?gateway=MANUAL_SEARCH&sgroup=104&_s=1" class="link">OperatorDesk</a>
-            <a href="https://librechat.ai.monobank.ua/" class="link">LibreChat</a>
-            <a href="https://universalbank-group.slack.com/" class="link">Slack</a>
+            <div class="section">
+                <h2>Work</h2>
+                <div class="links">
+                    <a href="https://support.ftband.net" class="link">Support</a>
+                    <a href="https://operatordesk.ftband.net/?gateway=MANUAL_SEARCH&sgroup=104&_s=1" class="link">OperatorDesk</a>
+                    <a href="https://librechat.ai.monobank.ua/" class="link">LibreChat</a>
+                    <a href="https://universalbank-group.slack.com/" class="link">Slack</a>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Links</h2>
+                <div class="links">
+                    <a href="https://www.icloud.com/mail/" class="link">iCloud</a>
+                    <a href="https://mail.google.com/" class="link">Google Mail</a>
+                    <a href="https://www.telegra.ph/" class="link">Telegraph</a>
+                    <a href="https://docs.google.com/spreadsheets/" class="link">Spreadsheets</a>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Media</h2>
+                <div class="links">
+                    <a href="https://ukr.radio/channel.html?channelID=1&progID=558&sliderIndex=43&regID=6/" class="link">Radio</a>
+                    <a href="https://www.youtube.com/" class="link">Video</a>
+                    <a href="https://www.pravda.com.ua/" class="link">News</a>
+                    <a href="https://music.youtube.com/" class="link">Music</a>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Sport</h2>
+                <div class="links">
+                    <a href="https://euroleague.tv/home" class="link">EuroLeague</a>
+                    <a href="https://www.maincast.tv/" class="link">Maincast</a>
+                    <a href="https://suspilne.media/sport/schedule/tv/" class="link">Suspilne Sport</a>
+                    <a href="https://app.setantasports.com/home/" class="link">Setanta OTT</a>
+                </div>
+            </div>
         </div>
     </div>
     
-    <div class="section">
-        <h2>Links</h2>
-        <div class="links">
-            <a href="https://www.icloud.com/mail/" class="link">iCloud</a>
-            <a href="https://mail.google.com/" class="link">Google Mail</a>
-            <a href="https://www.telegra.ph/" class="link">Telegraph</a>
-            <a href="https://docs.google.com/spreadsheets/" class="link">Spreadsheets</a>
-        </div>
-    </div>
-    
-       <div class="section">
-        <h2>Media</h2>
-        <div class="links">
-            <a href="https://ukr.radio/channel.html?channelID=1&progID=558&sliderIndex=43&regID=6/" class="link">Radio</a>
-            <a href="https://www.youtube.com/" class="link">Video</a>
-            <a href="https://www.pravda.com.ua/" class="link">News</a>
-            <a href="https://music.youtube.com/" class="link">Music</a>
-        </div>
-    </div>
-    
-     <div class="section">
-        <h2>Sport</h2>
-        <div class="links">
-            <a href="https://euroleague.tv/home" class="link">EuroLeague</a>
-            <a href="https://www.maincast.tv/" class="link">Maincast</a>
-            <a href="https://suspilne.media/sport/schedule/tv/" class="link">Suspilne Sport</a>
-            <a href="https://app.setantasports.com/home/" class="link">Setanta OTT</a>
-        </div>
-    </div>
-</div>
-
-    
-        
-    <script>
-        const searchInput = document.getElementById('search-input');
-        searchInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                const query = encodeURIComponent(this.value);
-                window.open(`https://duckduckgo.com/?ia=web&origin=funnel_home_website&t=h_&kc=-1&kk=-1&kl=wt-wt&kn=1&kp=-2&kt=u&kz=-1&kae=d&kah=ua-uk&kaj=m&kak=-1&kao=-1&kap=-1&kaq=-1&kat=-1&kau=-1&kax=-1&kay=i&kbe=0&kbg=-1&q=${query}`, '_self');
-            }
-        });
-
-        // Погода Open-Meteo
-        async function updateWeather() {
-    try {
-        const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=48.525&longitude=25.0371&hourly=temperature_2m&timezone=auto&forecast_days=1');
-        const data = await response.json();
-        const now = new Date();
-        const hourIndex = Math.floor(now.getHours());
-        const temp = Math.round(data.hourly.temperature_2m[hourIndex]);
-
-        document.getElementById('weather-temp').textContent = `${temp}°C`;
-        document.getElementById('weather-time').textContent = '';  // Прибираємо дату
-    } catch (error) {
-        document.getElementById('weather-temp').textContent = 'Помилка';
-    }
-}
-
-        updateWeather();
-        setInterval(updateWeather, 3600000); // Оновлювати щогодини
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
