@@ -1,4 +1,7 @@
-const searchInput = document.getElementById('search-input');
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-input');
+    searchInput.focus();
+});
 
 searchInput.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
